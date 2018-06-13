@@ -10,6 +10,12 @@
     <script src="/chat.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <script>
+        function bottomScroll() {
+            $("#box-chat").animate({ scrollTop: $(this).height() }, "slow");
+            return false;
+        }
+    </script>
     <title>JiroChat</title>
 </head>
 
@@ -26,7 +32,7 @@
         <hr>
         <input type="text" name="name" id="name" placeholder="Your name">
         <input type="text" name="message" id="message" placeholder="Message ...">
-        <button id="send">Send</button>
+        <button onclick="bottomScroll()" id="send">Send</button>
     </div>
 </body>
 
