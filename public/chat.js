@@ -50,13 +50,13 @@ window.onload = () => {
             formChat.style.display = "block";
 
             name = username.value;
+            document.getElementById('name').textContent += `User : ${name}`;
+            username.value = "";
         }
         else{
             alert('Username is required!');
             username.style.border = "1px solid red";
         }
-        document.getElementById('name').textContent += `User : ${name}`;
-        username.value = "";
     });
 
     socket.on('newuser', (data) => {
