@@ -1,6 +1,6 @@
 window.onload = () => {
     // Connection
-    const socket = io.connect('http://localhost:3000/');
+    const socket = io.connect('https://jirochat.herokuapp.com/');
 
     var output = document.getElementById("output");
     var name;
