@@ -3,17 +3,9 @@ body{
 }
 
 h1{
-    font-size: 18px;
+    font-size: 25px;
     padding: 10px 20px;
     color: #575ed8;
-}
-
-#jiro-chat{
-    max-width: 700px;
-    margin: 30px auto;
-    border: 1px solid #ddd;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
-    border-radius: 2px;
 }
 
 #box-chat{
